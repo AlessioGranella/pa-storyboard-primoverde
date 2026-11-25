@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Primoverde · Storyboard video social 9:16</title>
+<style>
+@font-face{font-family:"Fredoka";src:url("assets/fonts/fredoka-latin.woff2") format("woff2");font-weight:300 700;font-display:swap}
+@font-face{font-family:"Roboto Flex";src:url("assets/fonts/robotoflex-latin.woff2") format("woff2");font-weight:100 1000;font-display:swap}
+:root{--pa-campagna:#004928;--pa-foglia:#95C11F;--pa-oro:#D7B46A;--pa-sabbia:#FFF7F1;--pa-bianco:#FFFFFF;--pa-ferro:#535A60;--pa-argento:#B6C0C6;--pa-notte:#000E1E;
+  --title:"Fredoka",system-ui,sans-serif;--text:"Roboto Flex",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --pa-radius-m:16px;--pa-radius-l:24px;--pa-radius-pill:999px;--max:1440px;--pad:40px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--pa-sabbia);color:var(--pa-notte);font-family:var(--text);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+@media (max-width:720px){:root{--pad:16px}}
+.masthead{background:var(--pa-campagna);color:var(--pa-sabbia);padding:64px 0 56px}
+.masthead .wrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start}
+@media (max-width:900px){.masthead .wrap{grid-template-columns:1fr}}
+.masthead .txt{display:flex;flex-direction:column;gap:24px}
+.lockup{display:inline-grid;justify-items:center;gap:12px;width:fit-content}
+.lockup .b{width:220px;height:auto;display:block}.lockup .e{width:44px;height:auto;display:block}
+.eyebrow{width:fit-content;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;padding:4px 12px;border-radius:var(--pa-radius-pill);background:rgba(255,255,255,.14)}
+h1{font-family:var(--title);font-weight:500;font-size:clamp(34px,4.4vw,60px);line-height:1.1;max-width:18ch}
+.sub{font-size:17px;max-width:62ch;opacity:.88}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.meta div{background:rgba(255,247,241,.08);border-radius:var(--pa-radius-m);padding:16px 18px}
+.meta dt{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--pa-oro);margin-bottom:6px}
+.meta dd{font-size:15px;line-height:1.35}
+.final video{width:100%;aspect-ratio:9/16;border-radius:var(--pa-radius-l);background:var(--pa-notte);display:block}
+.final p{font-size:13px;opacity:.8;margin-top:10px}
+section{padding:48px 0 0}
+.sec-h{font-family:var(--title);font-weight:500;font-size:28px;color:var(--pa-campagna);margin-bottom:24px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--pa-bianco);border-radius:var(--pa-radius-m);padding:24px}
+.card h3{font-family:var(--title);font-weight:500;font-size:19px;color:var(--pa-campagna);margin-bottom:6px}
+.card p{font-size:15px}
+
+/* barra commenti */
+.toolbar{position:sticky;top:0;z-index:5;background:var(--pa-campagna);color:var(--pa-sabbia);margin-top:48px;padding:12px 0}
+.toolbar .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.toolbar .label{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--pa-oro)}
+.toolbar .who{display:flex;align-items:center;gap:10px;font-size:14px}
+.toolbar input{font:inherit;font-size:15px;padding:8px 14px;border-radius:var(--pa-radius-pill);border:0;background:var(--pa-sabbia);color:var(--pa-notte);min-width:220px}
+.toolbar button{font-family:var(--text);font-size:14px;font-weight:600;padding:9px 18px;border-radius:var(--pa-radius-pill);border:2px solid var(--pa-sabbia);background:transparent;color:var(--pa-sabbia);cursor:pointer}
+.toolbar button.pdf-all{background:var(--pa-foglia);border-color:var(--pa-foglia);color:var(--pa-notte)}
+.toolbar button:hover{filter:brightness(1.08)}
+.toolbar button:focus-visible,.toolbar input:focus-visible{outline:3px solid var(--pa-oro);outline-offset:2px}
+.copied{font-size:14px;color:var(--pa-oro)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:56px 32px}
+@media (max-width:520px){.grid{grid-template-columns:1fr}}
+.beat{display:grid;grid-template-columns:180px minmax(0,1fr);gap:20px;align-items:start}
+.frame{position:relative;aspect-ratio:9/16;border:0;padding:0;border-radius:var(--pa-radius-m);overflow:hidden;background:var(--pa-notte);cursor:pointer;display:block;width:100%}
+.frame video,.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.frame:focus-visible{outline:3px solid var(--pa-oro);outline-offset:3px}
+.tc{position:absolute;left:8px;top:8px;font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--pa-sabbia);background:rgba(0,14,30,.6);padding:3px 8px;border-radius:var(--pa-radius-pill)}
+.play{position:absolute;inset:0;display:grid;place-items:center;font-size:34px;color:var(--pa-sabbia);text-shadow:0 2px 12px rgba(0,14,30,.6);transition:opacity .2s}
+.frame.on .play{opacity:0}
+.idx{font-family:var(--title);font-weight:500;font-size:20px;color:var(--pa-campagna);margin-bottom:12px}
+.info dl{display:flex;flex-direction:column;gap:10px}
+.info dt{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--pa-ferro)}
+.info dd{font-size:14.5px;line-height:1.45}
+.info dd.vo{font-family:var(--title);font-size:17px;line-height:1.35;color:var(--pa-campagna)}
+.cmt{grid-column:1 / -1;display:flex;flex-direction:column;gap:6px}
+.cmt label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--pa-ferro)}
+.cmt textarea{font:inherit;font-size:15px;min-height:84px;padding:12px 14px;border-radius:var(--pa-radius-m);border:1.5px solid var(--pa-argento);background:var(--pa-bianco);color:var(--pa-notte);resize:vertical}
+.cmt textarea:focus-visible{outline:3px solid var(--pa-foglia);outline-offset:1px;border-color:var(--pa-campagna)}
+.cmt .saved{font-size:12px;color:var(--pa-ferro);min-height:1em}
+.copy-out{position:fixed;inset:10% 10%;z-index:20;background:var(--pa-bianco);border-radius:var(--pa-radius-l);padding:24px;display:flex;flex-direction:column;gap:12px;box-shadow:0 20px 60px rgba(0,14,30,.3)}
+.copy-out textarea{flex:1;font:inherit;padding:12px}
+.copy-out button{align-self:flex-end;font:inherit;font-weight:600;padding:8px 18px;border-radius:var(--pa-radius-pill);border:0;background:var(--pa-campagna);color:var(--pa-sabbia);cursor:pointer}
+.pdf-head,.pdf-note,.pdf-poster{display:none}
+footer{margin-top:80px;padding:32px 0;border-top:1px solid rgba(0,73,40,.18);font-size:13px;color:var(--pa-ferro)}
+
+/* PDF dei commenti: una pagina per ogni scena commentata */
+@page{size:A4 landscape;margin:14mm}
+@media print{
+  body.print-one > *:not(main){display:none !important}
+  body.print-one main section:not(.scene-sec){display:none !important}
+  body.print-one .scene-sec .sec-h{display:none}
+  body.print-one .beat:not(.printing){display:none !important}
+  body.print-one .grid{display:block}
+  body.print-one .beat.printing{break-before:page;grid-template-columns:62mm minmax(0,1fr);gap:8mm;margin:0}
+  body.print-one .beat.printing.pdf-first{break-before:auto}
+  body.print-one .beat video,body.print-one .play,body.print-one .cmt{display:none !important}
+  body.print-one .pdf-poster{display:block}
+  body.print-one .pdf-head{display:flex;justify-content:space-between;grid-column:1 / -1;font-size:10pt;color:var(--pa-ferro);border-bottom:1px solid var(--pa-argento);padding-bottom:3mm}
+  body.print-one .pdf-note{display:block;grid-column:1 / -1;border-left:4px solid var(--pa-foglia);padding:3mm 5mm;background:#F6F9EC}
+  body.print-one .pdf-note p:first-child{font-size:9pt;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--pa-ferro)}
+  body.print-one .pdf-note p:last-child{font-size:12pt;white-space:pre-wrap}
+  body.print-one .frame{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .toolbar{display:none}
+}
+</style></head>
+<body>
+<header class="masthead"><div class="wrap">
+  <div class="txt">
+    <span class="lockup"><img class="b" src="assets/loghi/primoverde-bianco.png" alt="Primoverde"><img class="e" src="assets/loghi/produttori-arborea-bianco.png" alt="Produttori Arborea"></span>
+    <p class="eyebrow">Storyboard · Video social 9:16 · Bozza 1</p>
+    <h1>Le nostre radici: Primoverde in verticale</h1>
+    <p class="sub">Il video social di Primoverde montato sul concept della cooperativa: cinque blocchi, dai campi di Arborea alle persone, alla filiera, ai prodotti, fino alla chiusura sui loghi. Riprese solo dagli intervalli Primoverde dell’elenco frame; marchio Primoverde sempre visibile in basso a sinistra.</p>
+    <dl class="meta">
+      <div><dt>Durata</dt><dd>1:17</dd></div>
+      <div><dt>Formato</dt><dd>Verticale 9:16 · 1080×1920</dd></div>
+      <div><dt>Blocchi</dt><dd>5 + chiusura</dd></div>
+      <div><dt>Canali</dt><dd>Reels, TikTok, Shorts, storie</dd></div>
+      <div><dt>Voce</dt><dd>Simone Grimaldi, maschile adulta</dd></div>
+      <div><dt>Sottotitoli</dt><dd>Impressi, Roboto Flex</dd></div>
+    </dl>
+  </div>
+  <div class="final">
+    <video src="assets/final/PV_Video_Social_9x16.mp4" poster="assets/final/poster.jpg" controls playsinline preload="none" aria-label="Video montato, verticale"></video>
+    <p>Il video montato, con voce e musica.</p>
+  </div>
+</div></header>
+
+<main>
+<section><div class="wrap">
+  <div class="cols">
+    <div class="card"><h3>Il racconto</h3><p>Il testo della voce è quello del concept, parola per parola, diviso nei suoi cinque blocchi. I tagli sono agganciati alle parole: ogni cambio d’inquadratura cade su una parola della voce.</p></div>
+    <div class="card"><h3>Le riprese</h3><p>Solo gli intervalli Primoverde dell’elenco frame (70 anni, Cooperativa 4k, Spot Novelle, Fonni): circa 46 secondi di girato per circa 70 di voce. Alcune riprese sono rallentate con interpolazione dei fotogrammi; l’ultimo blocco, che nel concept è un riepilogo, riusa riprese già viste.</p></div>
+    <div class="card"><h3>Marchio e grafica</h3><p>Marchio Primoverde con l’endorser Produttori Arborea (5:1) in basso a sinistra per tutto il video, sopra la fascia dell’interfaccia di Reels e TikTok. Sottotitoli sopra il marchio, chiusura su fondo sabbia.</p></div>
+  </div>
+</div></section>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="label">Commenti</span>
+    <label class="who">Il tuo nome <input type="text" id="whoName" autocomplete="name" placeholder="per firmare i commenti"></label>
+    <button type="button" class="pdf-all" id="pdfAll">Scarica PDF dei commenti</button>
+    <button type="button" id="copyAll">Copia il testo</button>
+    <span class="copied" id="copied" aria-live="polite"></span>
+  </div>
+</div>
+
+<section class="scene-sec"><div class="wrap">
+  <h2 class="sec-h">Le scene</h2>
+  <div class="grid" id="grid">
+    <article class="beat">
+      <button class="frame" aria-label="Riproduci: Le nostre radici">
+        <video src="assets/clips/sc1.mp4" poster="assets/clips/sc1.jpg" playsinline preload="none"></video>
+        <span class="tc">0:00,0 – 0:11,4</span><span class="play">▶</span>
+      </button>
+      <div class="info">
+        <p class="idx">Scena 01<span> · Le nostre radici</span></p>
+        <dl>
+          <div><dt>Voce</dt><dd class="vo">In Sardegna, ad Arborea, c’è una storia che da 71 anni cresce insieme alla sua terra. Una storia fatta di persone, lavoro e cooperazione.</dd></div>
+          <div><dt>A schermo</dt><dd>«71 anni ad Arborea» in alto quando la voce dice il numero. Sottotitoli; marchio Primoverde fisso in basso a sinistra per tutto il video.</dd></div>
+          <div><dt>Riprese</dt><dd>Spot Novelle 0:00 · 70 anni 2:38 · Spot Novelle 0:01 · Spot Novelle 0:02 · Spot Novelle 0:06 · Spot Novelle 0:08 · Fonni 2:17</dd></div>
+          <div><dt>Regia</dt><dd>Si apre dall’alto: il campo sotto le nuvole, poi i campi di Arborea con i monti sullo sfondo. Si scende a terra: le piante in controluce su «cresce», le patate tra le foglie su «terra», le mani su «persone» e «lavoro», la raccolta su «cooperazione».</dd></div>
+        </dl>
+      </div>
+    </article>
+    <article class="beat">
+      <button class="frame" aria-label="Riproduci: Le persone, il cuore della cooperativa">
+        <video src="assets/clips/sc2.mp4" poster="assets/clips/sc2.jpg" playsinline preload="none"></video>
+        <span class="tc">0:11,4 – 0:28,0</span><span class="play">▶</span>
+      </button>
+      <div class="info">
+        <p class="idx">Scena 02<span> · Le persone, il cuore della cooperativa</span></p>
+        <dl>
+          <div><dt>Voce</dt><dd class="vo">Siamo Produttori Arborea, una cooperativa fatta di persone, famiglie e produttori che condividono un legame profondo con il proprio territorio. Per noi, tutto comincia da loro: i soci produttori, il primo anello della nostra filiera.</dd></div>
+          <div><dt>A schermo</dt><dd>Solo sottotitoli e marchio.</dd></div>
+          <div><dt>Riprese</dt><dd>70 anni 2:28 · 70 anni 1:35 · 70 anni 1:30 · 70 anni 1:31 · Fonni 1:58 · 70 anni 1:36 · Spot Novelle 0:09 · 70 anni 2:40 · Fonni 2:15</dd></div>
+          <div><dt>Regia</dt><dd>La sede dall’alto su «Produttori Arborea», poi le mani dei produttori tra le piante e nella terra. Su «territorio» torna la campagna dal drone; sui soci produttori le patate in mano e la selezione a mano dopo la raccolta.</dd></div>
+        </dl>
+      </div>
+    </article>
+    <article class="beat">
+      <button class="frame" aria-label="Riproduci: Una filiera che segue ogni passaggio">
+        <video src="assets/clips/sc3.mp4" poster="assets/clips/sc3.jpg" playsinline preload="none"></video>
+        <span class="tc">0:28,0 – 0:46,6</span><span class="play">▶</span>
+      </button>
+      <div class="info">
+        <p class="idx">Scena 03<span> · Una filiera che segue ogni passaggio</span></p>
+        <dl>
+          <div><dt>Voce</dt><dd class="vo">Accanto a loro, il nostro team tecnico, che li affianca in ogni fase del percorso produttivo. Dalla scelta del seme alla raccolta, seguiamo da vicino ogni passaggio. Perché conoscere l’origine dei nostri prodotti e il percorso che fanno significa poterci prendere cura della loro qualità.</dd></div>
+          <div><dt>A schermo</dt><dd>Solo sottotitoli e marchio.</dd></div>
+          <div><dt>Riprese</dt><dd>Fonni 1:59 · Fonni 2:02 · Fonni 2:05 · Fonni 2:08 · Cooperativa 4k 0:52 · 70 anni 1:30 (ripresa) · Spot Novelle 0:09 (ripresa)</dd></div>
+          <div><dt>Regia</dt><dd>La raccolta delle patate seguita dall’inizio alla fine: trattore dall’alto, scavatrice di lato e dall’alto, patate sul nastro. Su «l’origine dei nostri prodotti» il magazzino con le cassette; chiude sulle mani che toccano il prodotto. Il girato non ha riprese del team tecnico.</dd></div>
+        </dl>
+      </div>
+    </article>
+    <article class="beat">
+      <button class="frame" aria-label="Riproduci: La terra diventa prodotto">
+        <video src="assets/clips/sc4.mp4" poster="assets/clips/sc4.jpg" playsinline preload="none"></video>
+        <span class="tc">0:46,6 – 0:57,0</span><span class="play">▶</span>
+      </button>
+      <div class="info">
+        <p class="idx">Scena 04<span> · La terra diventa prodotto</span></p>
+        <dl>
+          <div><dt>Voce</dt><dd class="vo">È così che nasce la nostra filiera, una filiera corta, radicata nel territorio di Arborea. Ogni raccolto racconta il valore del nostro lavoro.</dd></div>
+          <div><dt>A schermo</dt><dd>Solo sottotitoli e marchio.</dd></div>
+          <div><dt>Riprese</dt><dd>70 anni 1:32 · 70 anni 2:42 · 70 anni 1:38 · 70 anni 1:34 · Cooperativa 4k 0:54 · Fonni 2:07 · Spot Novelle 0:04</dd></div>
+          <div><dt>Regia</dt><dd>La scena dei prodotti, con tagli brevi: carota estratta dalla terra, lattuga e radicchio, angurie, cassette di patate in campo, la linea delle carote, le patate nella scavatrice e tra le foglie. Fragole, pomodori e meloni non hanno riprese nell’elenco.</dd></div>
+        </dl>
+      </div>
+    </article>
+    <article class="beat">
+      <button class="frame" aria-label="Riproduci: La nostra storia, il nostro valore">
+        <video src="assets/clips/sc5.mp4" poster="assets/clips/sc5.jpg" playsinline preload="none"></video>
+        <span class="tc">0:57,0 – 1:17,3</span><span class="play">▶</span>
+      </button>
+      <div class="info">
+        <p class="idx">Scena 05<span> · La nostra storia, il nostro valore</span></p>
+        <dl>
+          <div><dt>Voce</dt><dd class="vo">Perché dietro ogni prodotto Primoverde c’è molto più di un raccolto. Ci sono persone, famiglie, competenze e 71 anni di cooperazione. C’è una terra che amiamo e una storia che continuiamo a coltivare insieme.</dd></div>
+          <div><dt>A schermo</dt><dd>Sottotitoli e marchio, poi la chiusura grafica.</dd></div>
+          <div><dt>Riprese</dt><dd>70 anni 2:38 (ripresa) · 70 anni 2:40 (ripresa) · Fonni 2:15 (ripresa) · Fonni 2:02 (ripresa) · 70 anni 2:28 (ripresa) · 70 anni 1:35 (ripresa) · Spot Novelle 0:01 (ripresa)</dd></div>
+          <div><dt>Regia</dt><dd>Riepilogo con riprese già viste, come chiede il concept: i campi, le patate appena raccolte, le mani, la scavatrice, la sede su «71 anni», la campagna su «una terra che amiamo», le piante in controluce su «coltivare insieme».</dd></div>
+        </dl>
+      </div>
+    </article>
+    <article class="beat">
+      <button class="frame" aria-label="Riproduci: I loghi">
+        <img src="assets/clips/end.jpg" alt="">
+        <span class="tc">1:13,0 – 1:17,3</span>
+      </button>
+      <div class="info">
+        <p class="idx">Chiusura<span> · I loghi</span></p>
+        <dl>
+          <div><dt>Voce</dt><dd class="vo">—</dd></div>
+          <div><dt>A schermo</dt><dd>Fondo sabbia: marchio Primoverde a colori al centro, sotto l’endorser Produttori Arborea in proporzione 5:1 (regola del design system).</dd></div>
+          
+          <div><dt>Regia</dt><dd>Dissolvenza dall’ultima ripresa al fondo sabbia; entra il marchio, poi l’endorser. La musica sfuma.</dd></div>
+        </dl>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="sec-h">Punti da confermare</h2>
+  <div class="cols">
+    <div class="card"><h3>Prodotti senza riprese</h3><p>Nell’elenco frame Primoverde ci sono patate, carote, angurie, lattuga e radicchio. Fragole, pomodori e meloni no (i meloni compaiono solo in una ripresa con la vecchia coccarda sulle magliette): la voce non li nomina, la scena dei prodotti mostra quelli che ci sono. Se la cooperativa ha altro girato, lo inseriamo.</p></div>
+    <div class="card"><h3>Il team tecnico</h3><p>Il blocco 3 parla del team tecnico, ma nel girato non ci sono riprese di tecnici in campo: la scena racconta i passaggi della raccolta. Una ripresa dedicata renderebbe il blocco più fedele al testo.</p></div>
+    <div class="card"><h3>Durata e rallenty</h3><p>Con solo il girato Primoverde il video arriva a 1:17 usando rallenty e riepilogo finale. Più girato (anche gli intervalli Produttori Arborea dell’elenco) toglierebbe le ripetizioni.</p></div>
+    <div class="card"><h3>Musica</h3><p>In questa bozza la traccia è quella del video social corporate. Se serve una musica propria per Primoverde, la generiamo.</p></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Storyboard Primoverde · Riprese dai video della cooperativa (solo intervalli Primoverde dell’elenco frame) · Marchi e caratteri dal design system Produttori Arborea</div></footer>
+<script>
+(function(){
+  /* riproduzione: una scena alla volta */
+  document.querySelectorAll('.frame').forEach(function(f){
+    var v = f.querySelector('video'); if (!v) return;
+    f.addEventListener('click', function(){
+      document.querySelectorAll('.frame video').forEach(function(o){ if (o !== v) { o.pause(); o.closest('.frame').classList.remove('on'); } });
+      if (v.paused) { v.currentTime = 0; v.play(); f.classList.add('on'); } else { v.pause(); f.classList.remove('on'); }
+    });
+    v.addEventListener('ended', function(){ f.classList.remove('on'); });
+  });
+
+  /* commenti: uno per scena, salvati nel browser di chi scrive; «Scarica PDF» li raccoglie tutti */
+  var store = {
+    get: function(k){ try { return localStorage.getItem(k) || ''; } catch(e){ return ''; } },
+    set: function(k, v){ try { localStorage.setItem(k, v); return true; } catch(e){ return false; } }
+  };
+  var PFX = 'pa-primoverde-video:';
+  var who = document.getElementById('whoName');
+  who.value = store.get(PFX + 'nome');
+  who.addEventListener('input', function(){ store.set(PFX + 'nome', who.value.trim()); });
+  var today = function(){ return new Date().toLocaleDateString('it-IT', {day:'numeric', month:'long', year:'numeric'}); };
+  var beats = Array.prototype.slice.call(document.querySelectorAll('.beat'));
+  var sceneTitle = function(beat){ return beat.querySelector('.idx').textContent.trim(); };
+  beats.forEach(function(beat, i){
+    var short = beat.querySelector('.idx').firstChild.textContent.trim();
+    var key = PFX + 'scena-' + i, id = 'cmt-' + i;
+    var box = document.createElement('div'); box.className = 'cmt';
+    box.innerHTML = '<label for="' + id + '">Commento · ' + short + '</label>' +
+      '<textarea id="' + id + '" placeholder="Scrivi qui cosa cambiare in questa scena"></textarea>' +
+      '<span class="saved" aria-live="polite"></span>';
+    beat.appendChild(box);
+    var ta = box.querySelector('textarea'), saved = box.querySelector('.saved');
+    ta.value = store.get(key);
+    if (ta.value) saved.textContent = 'Salvato in questo browser';
+    ta.addEventListener('input', function(){
+      saved.textContent = store.set(key, ta.value) ? 'Salvato in questo browser' : 'Non salvato: scarica il PDF prima di chiudere';
+    });
+  });
+  var commented = function(){ return beats.filter(function(b){ return b.querySelector('.cmt textarea').value.trim(); }); };
+  var copied = document.getElementById('copied');
+
+  document.getElementById('pdfAll').addEventListener('click', function(){
+    var list = commented();
+    if (!list.length){ copied.textContent = 'Nessun commento da scaricare'; return; }
+    var name = who.value.trim(), added = [], waits = [];
+    list.forEach(function(beat, n){
+      var f = beat.querySelector('.frame'), v = f.querySelector('video');
+      if (v){ v.pause(); f.classList.remove('on'); }
+      var head = document.createElement('div'); head.className = 'pdf-head';
+      head.innerHTML = '<span></span><span><b></b></span>';
+      head.firstChild.textContent = 'Storyboard Primoverde · commenti' + (name ? ' di ' + name : '') + ' · ' + today();
+      head.querySelector('b').textContent = sceneTitle(beat) + ' · ' + (n + 1) + '/' + list.length;
+      var note = document.createElement('div'); note.className = 'pdf-note';
+      note.innerHTML = '<p>Commento</p><p></p>';
+      note.lastChild.textContent = beat.querySelector('.cmt textarea').value.trim();
+      beat.insertBefore(head, beat.firstChild); beat.appendChild(note);
+      added.push(head, note);
+      if (v){  // il video non si stampa: al suo posto il fotogramma
+        var img = document.createElement('img'); img.className = 'pdf-poster'; img.alt = '';
+        img.src = v.getAttribute('poster'); v.parentNode.insertBefore(img, v.nextSibling);
+        added.push(img); if (img.decode) waits.push(img.decode().catch(function(){}));
+      }
+      beat.classList.add('printing'); if (n === 0) beat.classList.add('pdf-first');
+    });
+    var oldTitle = document.title;
+    document.title = 'Primoverde-storyboard-commenti' + (name ? '-' + name.replace(/\s+/g, '-') : '');
+    document.body.classList.add('print-one');
+    var done = function(){
+      window.removeEventListener('afterprint', done);
+      document.body.classList.remove('print-one');
+      list.forEach(function(b){ b.classList.remove('printing', 'pdf-first'); });
+      added.forEach(function(x){ x.remove(); });
+      document.title = oldTitle;
+    };
+    window.addEventListener('afterprint', done);
+    Promise.all(waits).then(function(){ window.print(); });
+  });
+
+  document.getElementById('copyAll').addEventListener('click', function(){
+    var name = who.value.trim(), parts = commented().map(function(b){
+      return sceneTitle(b) + '\n' + b.querySelector('.cmt textarea').value.trim();
+    });
+    if (!parts.length){ copied.textContent = 'Nessun commento da copiare'; return; }
+    var text = 'Storyboard Primoverde · commenti' + (name ? ' di ' + name : '') + ' · ' + today() +
+      '\n' + location.href.split('#')[0] + '\n\n' + parts.join('\n\n');
+    var fallback = function(){
+      var old = document.querySelector('.copy-out'); if (old) old.remove();
+      var p = document.createElement('div'); p.className = 'copy-out';
+      p.innerHTML = '<textarea readonly aria-label="Testo dei commenti"></textarea><button type="button">Chiudi</button>';
+      p.querySelector('textarea').value = text;
+      p.querySelector('button').addEventListener('click', function(){ p.remove(); });
+      document.body.appendChild(p); p.querySelector('textarea').select();
+      copied.textContent = 'Seleziona e copia il testo';
+    };
+    if (navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(text).then(function(){
+        copied.textContent = parts.length + (parts.length === 1 ? ' commento copiato' : ' commenti copiati');
+      }, fallback);
+    } else fallback();
+  });
+})();
+</script>
+</body></html>
